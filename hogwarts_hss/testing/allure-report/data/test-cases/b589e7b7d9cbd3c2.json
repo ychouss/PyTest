@@ -1,0 +1,146 @@
+{
+  "uid" : "b589e7b7d9cbd3c2",
+  "name" : "test_sub[float]",
+  "fullName" : "test_calc_new.Testcalc#test_sub",
+  "historyId" : "6e703df902e32e31ac5250442367e5fb",
+  "time" : {
+    "start" : 1614171803643,
+    "stop" : 1614171803644,
+    "duration" : 1
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0.4 == 0.3\n  +0.4\n  -0.3",
+  "statusTrace" : "self = <testing.test_calc_new.Testcalc object at 0x000001A2D0CEC8E0>, get_calc = <testedcode.calc.Calculator object at 0x000001A2D0CACF10>, get_sub_datas = [0.5, 0.1, 0.3]\n\n    @allure.story('测试减法')\n    @pytest.mark.second\n    def test_sub(self,get_calc,get_sub_datas):\n        with allure.step('计算两数相减'):\n            reslut = get_calc.sub(get_sub_datas[0],get_sub_datas[1])\n>       assert reslut == get_sub_datas[2]\nE       assert 0.4 == 0.3\nE         +0.4\nE         -0.3\n\ntest_calc_new.py:37: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1614171803536,
+      "stop" : 1614171803537,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_sub_datas",
+    "time" : {
+      "start" : 1614171803641,
+      "stop" : 1614171803643,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 0.4 == 0.3\n  +0.4\n  -0.3",
+    "statusTrace" : "self = <testing.test_calc_new.Testcalc object at 0x000001A2D0CEC8E0>, get_calc = <testedcode.calc.Calculator object at 0x000001A2D0CACF10>, get_sub_datas = [0.5, 0.1, 0.3]\n\n    @allure.story('测试减法')\n    @pytest.mark.second\n    def test_sub(self,get_calc,get_sub_datas):\n        with allure.step('计算两数相减'):\n            reslut = get_calc.sub(get_sub_datas[0],get_sub_datas[1])\n>       assert reslut == get_sub_datas[2]\nE       assert 0.4 == 0.3\nE         +0.4\nE         -0.3\n\ntest_calc_new.py:37: AssertionError",
+    "steps" : [ {
+      "name" : "计算两数相减",
+      "time" : {
+        "start" : 1614171803644,
+        "stop" : 1614171803644,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_sub_datas::0",
+    "time" : {
+      "start" : 1614171803647,
+      "stop" : 1614171803648,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "story",
+    "value" : "测试减法"
+  }, {
+    "name" : "tag",
+    "value" : "second"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "subSuite",
+    "value" : "Testcalc"
+  }, {
+    "name" : "host",
+    "value" : "houss"
+  }, {
+    "name" : "thread",
+    "value" : "6308-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc_new"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_sub_datas",
+    "value" : "[0.5, 0.1, 0.3]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "run(order=1)", "second" ]
+  },
+  "source" : "b589e7b7d9cbd3c2.json",
+  "parameterValues" : [ "[0.5, 0.1, 0.3]" ]
+}
